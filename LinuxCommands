@@ -14,3 +14,6 @@ find ./ -name "file1*" -exec cp {} . \;
 tar czvf ./backup ./Documents/Arun_Workspace/Kubernetes  ./Documents/Arun_Workspace/Linux_Cmd
 tar xvf backup -C tmp   --> Extracting the file to specific location
 tar xvf backup Documents/Arun_Workspace/Linux_Cmd ----> for an particular archieve
+
+ln users hard
+ln -s hard soft.  --> Soft link
