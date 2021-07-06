@@ -1,0 +1,30 @@
+  305  cd state-manipulation
+  314  terraform state list
+  315  terraform state pull
+  316  terraform state list
+  318  terraform show aws_ssm_parameter.myparameter
+  319  terraform state show aws_ssm_parameter.myparameter
+  320  terraform state mv aws_ssm_parameter.myparameter aws_ssm_parameter.myparameter2
+  322  terraform state list
+  325  terraform apply
+  333  mkdir modules/my-ssm-module
+  334  mkdir modules/my-ssm-module -p
+  335  mkdir -p modules/my-ssm-module 
+  337  mv ssm.tf modules/my-ssm-module
+  343  terraform state list
+  346  terraform state list
+  347  terraform state mv aws_ssm_parameter.myparameter2 modules.my-ssm-module.aws_ssm_parameter.myparameter2
+  352  terraform state list
+  353  terraform state mv aws_ssm_parameter.myparameter2 modules.my-ssm-module.aws_ssm_parameter.myparameter2
+  354  terraform state mv aws_ssm_parameter.myparameter2 module.my-ssm-module.aws_ssm_parameter.myparameter2
+  365  terraform init
+  366  terraform plan
+  367  terraform state list
+  368  terraform state mv module.my-ssm-module.aws_ssm_parameter.myparameter2 module.ssm.aws_ssm_parameter.myparameter2
+  369  terraform plan
+  370  terraform state list
+  371  terraform state rm module.ssm.aws_ssm_parameter.myparameter2
+  372  terraform plan
+  373  terraform apply
+  374  terraform import module.ssm.aws_ssm_parameter.myparameter2 /myapp/myparameter
+  375  terraform plan

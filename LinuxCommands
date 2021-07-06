@@ -17,3 +17,28 @@ tar xvf backup Documents/Arun_Workspace/Linux_Cmd ----> for an particular archie
 
 ln users hard
 ln -s hard soft.  --> Soft link
+
+--- Running the jobs in background "
+sleep 360 
+bg
+sleep 200 &
+ls
+bg
+jobs
+fg 2
+jobs
+fg 1
+nohup ---> will run in background even the parent shell is closed
+nohup find / -xdev -type f -perm +u=s -print > ~/find.txt &
+
+
+Check the process in Linux
+pgrep -u root
+ps aux |grep 30975
+Ps fax
+Ptree 
+
+
+nice -n 5 sleep 360
+renice -n 10 31046
+ps aux |grep sleep
